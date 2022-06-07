@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  font-size: 1.2rem;
+  color: rgb(33 , 33, 33);
+}
+.hero-section{
+  height: 80vh;
+  margin: 0% 10%;
+}
+.hero-section img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cta{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta-text{
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.cta-text h2{
+  overflow: hidden;
+}
+
+.cta-text span{
+  padding: 0rem 0.4rem;
+  display: block;
+  text-shadow: rgb(0,0, 0, 0.4) 0px 0px 20px;
+}   
+
+.cta-btn {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  font-family: "Poppins";
+  border-radius: 0.3rem;
+  color: rgb(33, 33, 33);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:480px) {
+  .hero-section{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .hero-section img{
+    height: 70%;
+    width: 80%;
+  }
+
+
+  .cta-text{
+    font-size: 1rem;
+  }
+
+  .cta-btn{
+    padding: 0.3rem 1rem;
+    font-size: 0.7rem;
+  }
+}
